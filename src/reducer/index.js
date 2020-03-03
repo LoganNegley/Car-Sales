@@ -19,12 +19,12 @@ const initialState = {
 
 export function carReducer(state = initialState, action){
     switch(action.type){
-    case '':
+    case 'ADD_FEATURE':
         return {};
-    case '':
+    case 'REMOVE_FEATURE':
     return{};
 
     default:
         return state;
     }
-}
+};

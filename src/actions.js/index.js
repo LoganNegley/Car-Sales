@@ -4,7 +4,7 @@ export const addFeatures(){
         payload:''}
 }
 
-export const removeFearuters(){
+export const removeFeatures(){
     return{
         type: 'REMOVE_FEATURE',
         payload:''
