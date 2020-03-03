@@ -31,9 +31,7 @@ export function carReducer(state = initialState, action){
               features: [...state.car.features, 
                             action.payload]
             },
-            additionalFeatures: state.additionalFeatures.filer(item => item.id != action.payload.id)
-            // additionalPrice: state.additionalPrice + 
-
+            additionalFeatures: state.additionalFeatures.filter(item => item.id !== action.payload.id)
         };
     case 'REMOVE_FEATURE':
     return{
