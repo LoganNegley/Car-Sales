@@ -20,7 +20,6 @@ import {ADD_FEATURE, REMOVE_FEATURE} from '../actions.js/index';
 
 
 export function carReducer(state = initialState, action){
-    console.log(action.type)
     switch(action.type){
     case 'ADD_FEATURE':
         return {
@@ -31,7 +30,8 @@ export function carReducer(state = initialState, action){
               price: state.car.price + action.payload.price,
               features: [...state.car.features, 
                             action.payload]
-            }
+            },
+            additionalFeatures: state.additionalFeatures.filer(item => item.id != action.payload.id)
             // additionalPrice: state.additionalPrice + 
 
         };
