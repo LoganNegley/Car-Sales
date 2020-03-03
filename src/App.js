@@ -6,7 +6,8 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 import {connect } from 'react-redux';
 
-const App = () => {
+const App = (props) => {
+  console.log(props)
   // const state = {
   //   additionalPrice: 0,
   //   car: {
@@ -34,12 +35,12 @@ const App = () => {
 
 // mapStateToProps goes here!!!!
 const mapStateToProps = state => {
-  return{
+  return {
     additionalPrice: additionalPrice,
     car: state.car,
     additionalFeatures: additionalFeatures,
-  }
-}
+  };
+};
 
   return (
     <div className="boxes">
@@ -55,4 +56,5 @@ const mapStateToProps = state => {
   );
 };
 
-export default connect(null,{})(App);
+export default connect(mapStateToProps, {})(App);
+ 
