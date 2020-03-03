@@ -24,6 +24,12 @@ export function carReducer(state = initialState, action){
         return {
             // add feature and make total add the additional cost
             ...state,
+            car:{
+              ...state.car,
+              price: state.car.price + action.payload.price,
+              features: [...state.car.features, 
+                            action.payload]
+            }
             // additionalPrice: state.additionalPrice + 
 
         };
