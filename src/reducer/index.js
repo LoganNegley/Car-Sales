@@ -1,1 +1,5 @@
-// carReducer goes here
+function carReducer(){
+    return {
+        
+    }
+}
