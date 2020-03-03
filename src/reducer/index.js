@@ -1,5 +1,3 @@
-function carReducer(){
-    return {
-        
-    }
+export function carReducer(){
+    return 
 }
