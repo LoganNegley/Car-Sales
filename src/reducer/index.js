@@ -1,4 +1,6 @@
-const initialState = {
+import {ADD_FEATURE, REMOVE_FEATURE} from '../actions.js/index';
+
+  const initialState = {
     additionalPrice: 0,
     car: {
       price: 26395,
