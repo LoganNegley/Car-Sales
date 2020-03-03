@@ -6,7 +6,7 @@ import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
-import {addFeatures, removeFeatures} from './actions.js/index';
+import {buyItem, removeFeature} from './actions.js/index';
 
 const App = (props) => {
   console.log(props)
@@ -43,5 +43,5 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, {addFeatures, removeFeatures})(App);
+export default connect(mapStateToProps, {buyItem, removeFeature})(App);
  
