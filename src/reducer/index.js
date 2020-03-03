@@ -18,5 +18,13 @@ const initialState = {
 
 
 export function carReducer(state = initialState, action){
+    switch(action.type){
+    case '':
+        return {};
+    case '':
+    return{};
 
+    default:
+        return state;
+    }
 }
